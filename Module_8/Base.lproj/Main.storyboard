@@ -60,7 +60,7 @@
         <!--2-->
         <scene sceneID="ISB-Aw-dqv">
             <objects>
-                <viewController id="iuJ-Mq-YXW" sceneMemberID="viewController">
+                <viewController id="iuJ-Mq-YXW" customClass="Scene2Controller" customModule="Module_8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kwk-eC-PKA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
