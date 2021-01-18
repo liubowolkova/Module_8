@@ -124,8 +124,12 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pic_2" translatesAutoresizingMaskIntoConstraints="NO" id="XpB-RF-4Mg">
+                                <rect key="frame" x="187" y="258" width="199" height="246"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pic_4" translatesAutoresizingMaskIntoConstraints="NO" id="Gzh-ih-3SY">
-                                <rect key="frame" x="58" y="258" width="294" height="362"/>
+                                <rect key="frame" x="26" y="258" width="199" height="246"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -134,12 +138,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="3" id="A4T-GH-cyn"/>
                     <connections>
-                        <outlet property="imageView" destination="Gzh-ih-3SY" id="Em0-aQ-Ptf"/>
                         <outlet property="segmentedControl" destination="Jx5-6l-lNc" id="Kc9-3B-dQ5"/>
                         <outletCollection property="textfields" destination="bfQ-Qz-1Lx" collectionClass="NSMutableArray" id="NuH-BT-qIV"/>
                         <outletCollection property="textfields" destination="hA1-To-MDY" collectionClass="NSMutableArray" id="CGL-mG-aoe"/>
                         <outletCollection property="buttons" destination="QU5-HM-6ZJ" collectionClass="NSMutableArray" id="EaM-Yp-bpt"/>
                         <outletCollection property="buttons" destination="03H-Zg-jzM" collectionClass="NSMutableArray" id="HiM-dE-jWj"/>
+                        <outletCollection property="imageViews" destination="Gzh-ih-3SY" collectionClass="NSMutableArray" id="J3C-TU-NVp"/>
+                        <outletCollection property="imageViews" destination="XpB-RF-4Mg" collectionClass="NSMutableArray" id="7nk-sH-U0s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqm-ou-3WU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -168,6 +173,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Pic_2" width="414" height="736"/>
         <image name="Pic_4" width="414" height="736"/>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

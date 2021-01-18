@@ -11,7 +11,7 @@ class Scene3Controller: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet var textfields: [UITextField]!
     @IBOutlet var buttons: [UIButton]!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var imageViews: [UIImageView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +29,8 @@ class Scene3Controller: UIViewController {
         for i in 0..<2 {
             textfields[i].isHidden = textfieldBool
             buttons[i].isHidden = buttonBool
+            imageViews[i].isHidden = imageBool
         }
-        imageView.isHidden = imageBool
     }
     
     @IBAction func changeView(_ sender: UISegmentedControl) {
