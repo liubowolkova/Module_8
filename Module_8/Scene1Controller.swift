@@ -41,16 +41,23 @@ class Scene1Controller: UIViewController {
         switch sender.tag {
         case 0:
             img -= 1
-            self.setImage(image: self.images[img]!)
-            
-            if img == 0 { self.buttonBack.isHidden = true }
-            if img == 8 { self.buttonNext.isHidden = false }
         case 1:
             img += 1
-            self.setImage(image: self.images[img]!)
-            
-            if img == 9 { self.buttonNext.isHidden = true }
-            if img == 1 { self.buttonBack.isHidden = false }
+        default:
+            break
+        }
+        
+        self.setImage(image: self.images[img]!)
+        
+        switch img {
+        case 0:
+            self.buttonBack.isHidden = true
+        case 1:
+            self.buttonBack.isHidden = false
+        case 8:
+            self.buttonNext.isHidden = false
+        case 9:
+            self.buttonNext.isHidden = true
         default:
             break
         }
